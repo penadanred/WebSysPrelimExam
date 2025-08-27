@@ -6,7 +6,7 @@
                 body {
             font-family: Arial, sans-serif;
             margin: 0;
-            height: 50vh;
+            height: 20vh;
             display: flex;
             justify-content: center;
             align-items: center;
