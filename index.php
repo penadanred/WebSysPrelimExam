@@ -33,13 +33,13 @@
                 $num2 = $_POST['num3'];
 
                 $operation = $_POST['operation'];
-                $averslt = $_POST['averslt'];
                 $result = 0;
+                $average =0;
                 $error = "";
                 
                 switch ($operation) {
                     case '+':
-                        $result = ($num1 * 0.3) (+ $num2 * 0.3) (+$num3 * 0.4);
+                        $result = ($num1 * 0.3) + ( $num2 * 0.3) + ($num3 * 0.4);
                         break;
                    
                 }
