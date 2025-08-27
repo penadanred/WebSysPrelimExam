@@ -41,8 +41,8 @@
                    
                 }
                 
-
-                echo "<p class='result'>Final Grade: " . round($result, 2) . " (Letter Grade: $letter)</p>";
+                echo "<div class='result'>Final Grade: " . number_format($Average, 1) . "<br>Letter Grade: $letterGrade</div>";
+            }
         ?>
     </div>
 </body>
