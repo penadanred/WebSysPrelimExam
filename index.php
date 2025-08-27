@@ -10,37 +10,34 @@
     </style>
 </head>
 <body>
-    <h1>Simple Calculator</h1>
+    <h1>Grade Calculator</h1>
     
     <div class="calculator">
         <form method="POST">
-            <input type="number" name="num1" placeholder="Quiz Score" required>
-            <select name="operation">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">×</option>
-                <option value="/">÷</option>
-            </select>
-            <input type="number" name="num2" placeholder="Assignment Score" required>
-            <input type="number" name="num2" placeholder="Exam Score" required>
+            <input type="number" name="Quiz" placeholder="Quiz Score" required>
+            <input type="number" name="Assigment" placeholder="Assignment Score" required>
+            <input type="number" name="Exam" placeholder="Exam Score" required>
             <button type="submit">Calculate</button>
+            
         </form>
         
         <?php
             if ($_POST) {
-                $num1 = $_POST['num1'];
-                $num2 = $_POST['num2'];
-                $num2 = $_POST['num3'];
+                $Quiz  = $_POST['Quiz'];
+                $Assignment = $_POST['Assignment'];
+                $Exam = $_POST['Exam'];
 
-                $operation = $_POST['operation'];
-                $result = 0;
-                $average =0;
-                $error = "";
-                
-                switch ($operation) {
-                    case '+':
-                        $result = ($num1 * 0.3) + ( $num2 * 0.3) + ($num3 * 0.4);
-                        break;
+                $result = ($num1 * 0.30) + ( $num2 * 0.30) + ($num3 * 0.40);
+                 if ($Average >= 90) {
+                    $letterGrade = "A";
+                } elseif ($Average >= 80) {
+                    $letterGrade = "B";
+                } elseif ($Average >= 70) {
+                    $letterGrade = "C";
+                } elseif ($Average >= 60) {
+                    $letterGrade = "D";
+                } else {
+                    $letterGrade = "F";
                    
                 }
                 
